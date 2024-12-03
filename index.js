@@ -1,12 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
-
+const { Telegraf } = require('telegraf');
+const bot = new Telegraf('7277567974:AAGKLsI0I4xeDrIijiDBaH0obTjwjGuB_h0');
 const app = express();
 const PORT = process.env.PORT || 3000;
-const { Telegraf } = require('telegraf');
 
-const bot = new Telegraf('7277567974:AAGKLsI0I4xeDrIijiDBaH0obTjwjGuB_h0');
 
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
