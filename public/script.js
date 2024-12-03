@@ -11,7 +11,7 @@ joinBtn.addEventListener('click', () => {
   if (!players.includes(username)) {
     players.push(username);
     updateList();
-    alert(`Вы записаны, ${username}!`);
+    alert(`Вы записаны, ${username}!!`);
   } else {
     alert('Вы уже в списке!');
   }
